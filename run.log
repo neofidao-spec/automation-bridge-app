@@ -1,0 +1,321 @@
+build	Set up job	﻿2026-07-03T12:43:31.0401146Z Current runner version: '2.335.1'
+build	Set up job	2026-07-03T12:43:31.0426842Z ##[group]Runner Image Provisioner
+build	Set up job	2026-07-03T12:43:31.0427935Z Hosted Compute Agent
+build	Set up job	2026-07-03T12:43:31.0428641Z Version: 20260624.560
+build	Set up job	2026-07-03T12:43:31.0429278Z Commit: 925d229a51159bc391ae97e54a2dd1fe20af789d
+build	Set up job	2026-07-03T12:43:31.0430040Z Build Date: 2026-06-24T18:26:47Z
+build	Set up job	2026-07-03T12:43:31.0430792Z Worker ID: {92f81cb2-8c4c-4559-b831-7ee8908e030c}
+build	Set up job	2026-07-03T12:43:31.0431747Z Azure Region: westus2
+build	Set up job	2026-07-03T12:43:31.0432421Z ##[endgroup]
+build	Set up job	2026-07-03T12:43:31.0433993Z ##[group]Operating System
+build	Set up job	2026-07-03T12:43:31.0434647Z Ubuntu
+build	Set up job	2026-07-03T12:43:31.0435306Z 24.04.4
+build	Set up job	2026-07-03T12:43:31.0435821Z LTS
+build	Set up job	2026-07-03T12:43:31.0436411Z ##[endgroup]
+build	Set up job	2026-07-03T12:43:31.0436989Z ##[group]Runner Image
+build	Set up job	2026-07-03T12:43:31.0437577Z Image: ubuntu-24.04
+build	Set up job	2026-07-03T12:43:31.0438229Z Version: 20260628.225.1
+build	Set up job	2026-07-03T12:43:31.0439281Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260628.225/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2026-07-03T12:43:31.0441063Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260628.225
+build	Set up job	2026-07-03T12:43:31.0442241Z ##[endgroup]
+build	Set up job	2026-07-03T12:43:31.0443506Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-07-03T12:43:31.0445647Z Contents: read
+build	Set up job	2026-07-03T12:43:31.0446357Z Metadata: read
+build	Set up job	2026-07-03T12:43:31.0446936Z Packages: read
+build	Set up job	2026-07-03T12:43:31.0447775Z ##[endgroup]
+build	Set up job	2026-07-03T12:43:31.0449964Z Secret source: Actions
+build	Set up job	2026-07-03T12:43:31.0450980Z Prepare workflow directory
+build	Set up job	2026-07-03T12:43:31.0782636Z Prepare all required actions
+build	Set up job	2026-07-03T12:43:31.0829220Z Getting action download info
+build	Set up job	2026-07-03T12:43:31.4999030Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	Set up job	2026-07-03T12:43:31.5808789Z Download action repository 'actions/setup-java@v4' (SHA:c1e323688fd81a25caa38c78aa6df2d33d3e20d9)
+build	Set up job	2026-07-03T12:43:31.9105448Z Download action repository 'gradle/actions@v3' (SHA:d9c87d481d55275bb5441eef3fe0e46805f9ef70)
+build	Set up job	2026-07-03T12:43:32.6014073Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+build	Set up job	2026-07-03T12:43:32.8763877Z Complete job name: build
+build	Run actions/checkout@v4	﻿2026-07-03T12:43:32.9658979Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9669935Z ##[group]Run actions/checkout@v4
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9671286Z with:
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9672556Z   repository: neofidao-spec/automation-bridge-app
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9682829Z   token: ***
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9683754Z   ssh-strict: true
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9684673Z   ssh-user: git
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9685614Z   persist-credentials: true
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9686645Z   clean: true
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9687586Z   sparse-checkout-cone-mode: true
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9688681Z   fetch-depth: 1
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9689619Z   fetch-tags: false
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9690568Z   show-progress: true
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9691671Z   lfs: false
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9692564Z   submodules: false
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9693562Z   set-safe-directory: true
+build	Run actions/checkout@v4	2026-07-03T12:43:32.9695158Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0744481Z Syncing repository: neofidao-spec/automation-bridge-app
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0747980Z ##[group]Getting Git version info
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0749802Z Working directory is '/home/runner/work/automation-bridge-app/automation-bridge-app'
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0752955Z [command]/usr/bin/git version
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0838955Z git version 2.54.0
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0903184Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0914117Z Temporarily overriding HOME='/home/runner/work/_temp/8d1c5f52-508e-4d31-bd23-51ce9238ad08' before making global git config changes
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0918906Z Adding repository directory to the temporary git global config as a safe directory
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0923360Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/automation-bridge-app/automation-bridge-app
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0972026Z Deleting the contents of '/home/runner/work/automation-bridge-app/automation-bridge-app'
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0976760Z ##[group]Initializing the repository
+build	Run actions/checkout@v4	2026-07-03T12:43:33.0983086Z [command]/usr/bin/git init /home/runner/work/automation-bridge-app/automation-bridge-app
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1124019Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1127603Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1131060Z hint: to use in all of your new repositories, which will suppress this warning,
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1134075Z hint: call:
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1135750Z hint:
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1137558Z hint: 	git config --global init.defaultBranch <name>
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1140058Z hint:
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1142218Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1145565Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1148178Z hint:
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1149518Z hint: 	git branch -m <name>
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1151094Z hint:
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1153068Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1157390Z Initialized empty Git repository in /home/runner/work/automation-bridge-app/automation-bridge-app/.git/
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1164032Z [command]/usr/bin/git remote add origin https://github.com/neofidao-spec/automation-bridge-app
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1221954Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1225256Z ##[group]Disabling automatic garbage collection
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1234527Z [command]/usr/bin/git config --local gc.auto 0
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1299826Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1303050Z ##[group]Setting up auth
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1308568Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1348537Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1818956Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Run actions/checkout@v4	2026-07-03T12:43:33.1862709Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Run actions/checkout@v4	2026-07-03T12:43:33.2089998Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Run actions/checkout@v4	2026-07-03T12:43:33.2130429Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Run actions/checkout@v4	2026-07-03T12:43:33.2357564Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Run actions/checkout@v4	2026-07-03T12:43:33.2396339Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.2398031Z ##[group]Fetching the repository
+build	Run actions/checkout@v4	2026-07-03T12:43:33.2406017Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2754abd01375ae37b103c222ffb53d8acb24c948:refs/remotes/origin/main
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6151235Z From https://github.com/neofidao-spec/automation-bridge-app
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6154767Z  * [new ref]         2754abd01375ae37b103c222ffb53d8acb24c948 -> origin/main
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6193842Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6197349Z ##[group]Determining the checkout info
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6200653Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6213170Z [command]/usr/bin/git sparse-checkout disable
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6254919Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6287139Z ##[group]Checking out the ref
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6291342Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6360694Z Switched to a new branch 'main'
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6363814Z branch 'main' set up to track 'origin/main'.
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6370209Z ##[endgroup]
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6414665Z [command]/usr/bin/git log -1 --format=%H
+build	Run actions/checkout@v4	2026-07-03T12:43:33.6442092Z 2754abd01375ae37b103c222ffb53d8acb24c948
+build	Set up JDK 17	﻿2026-07-03T12:43:33.6830570Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Set up JDK 17	2026-07-03T12:43:33.6835997Z ##[group]Run actions/setup-java@v4
+build	Set up JDK 17	2026-07-03T12:43:33.6837078Z with:
+build	Set up JDK 17	2026-07-03T12:43:33.6837903Z   java-version: 17
+build	Set up JDK 17	2026-07-03T12:43:33.6838815Z   distribution: temurin
+build	Set up JDK 17	2026-07-03T12:43:33.6839752Z   cache: gradle
+build	Set up JDK 17	2026-07-03T12:43:33.6840634Z   java-package: jdk
+build	Set up JDK 17	2026-07-03T12:43:33.6841707Z   check-latest: false
+build	Set up JDK 17	2026-07-03T12:43:33.6842653Z   server-id: github
+build	Set up JDK 17	2026-07-03T12:43:33.6843593Z   server-username: GITHUB_ACTOR
+build	Set up JDK 17	2026-07-03T12:43:33.6844692Z   server-password: GITHUB_TOKEN
+build	Set up JDK 17	2026-07-03T12:43:33.6845772Z   overwrite-settings: true
+build	Set up JDK 17	2026-07-03T12:43:33.6846764Z   job-status: success
+build	Set up JDK 17	2026-07-03T12:43:33.6856327Z   token: ***
+build	Set up JDK 17	2026-07-03T12:43:33.6857201Z ##[endgroup]
+build	Set up JDK 17	2026-07-03T12:43:33.8532503Z ##[group]Installed distributions
+build	Set up JDK 17	2026-07-03T12:43:33.8584209Z Resolved Java 17.0.19+10 from tool-cache
+build	Set up JDK 17	2026-07-03T12:43:33.8598963Z (node:2302) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Set up JDK 17	2026-07-03T12:43:33.8602458Z Setting Java 17.0.19+10 as the default
+build	Set up JDK 17	2026-07-03T12:43:33.8604845Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Set up JDK 17	2026-07-03T12:43:33.8606929Z Creating toolchains.xml for JDK version 17 from temurin
+build	Set up JDK 17	2026-07-03T12:43:33.8690603Z Writing to /home/runner/.m2/toolchains.xml
+build	Set up JDK 17	2026-07-03T12:43:33.8692645Z 
+build	Set up JDK 17	2026-07-03T12:43:33.8693758Z Java configuration:
+build	Set up JDK 17	2026-07-03T12:43:33.8695747Z   Distribution: temurin
+build	Set up JDK 17	2026-07-03T12:43:33.8697648Z   Version: 17.0.19+10
+build	Set up JDK 17	2026-07-03T12:43:33.8700629Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+build	Set up JDK 17	2026-07-03T12:43:33.8703057Z 
+build	Set up JDK 17	2026-07-03T12:43:33.8704674Z ##[endgroup]
+build	Set up JDK 17	2026-07-03T12:43:33.8720851Z Creating settings.xml with server-id: github
+build	Set up JDK 17	2026-07-03T12:43:33.8733386Z Writing to /home/runner/.m2/settings.xml
+build	Set up JDK 17	2026-07-03T12:43:34.2008547Z gradle cache is not found
+build	Setup Gradle	﻿2026-07-03T12:43:34.2273732Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Setup Gradle	2026-07-03T12:43:34.2275153Z ##[group]Run gradle/actions/setup-gradle@v3
+build	Setup Gradle	2026-07-03T12:43:34.2275495Z with:
+build	Setup Gradle	2026-07-03T12:43:34.2275748Z   cache-disabled: false
+build	Setup Gradle	2026-07-03T12:43:34.2276036Z   cache-read-only: false
+build	Setup Gradle	2026-07-03T12:43:34.2276326Z   cache-write-only: false
+build	Setup Gradle	2026-07-03T12:43:34.2276647Z   cache-overwrite-existing: false
+build	Setup Gradle	2026-07-03T12:43:34.2277012Z   gradle-home-cache-includes: caches
+build	Setup Gradle	notifications
+build	Setup Gradle	
+build	Setup Gradle	2026-07-03T12:43:34.2277415Z   gradle-home-cache-cleanup: false
+build	Setup Gradle	2026-07-03T12:43:34.2277752Z   add-job-summary: always
+build	Setup Gradle	2026-07-03T12:43:34.2278070Z   add-job-summary-as-pr-comment: never
+build	Setup Gradle	2026-07-03T12:43:34.2278416Z   dependency-graph: disabled
+build	Setup Gradle	2026-07-03T12:43:34.2278758Z   dependency-graph-continue-on-failure: true
+build	Setup Gradle	2026-07-03T12:43:34.2279168Z   build-scan-publish: false
+build	Setup Gradle	2026-07-03T12:43:34.2279481Z   validate-wrappers: false
+build	Setup Gradle	2026-07-03T12:43:34.2279785Z   generate-job-summary: true
+build	Setup Gradle	2026-07-03T12:43:34.2280112Z   gradle-home-cache-strict-match: false
+build	Setup Gradle	2026-07-03T12:43:34.2280457Z   workflow-job-context: null
+build	Setup Gradle	2026-07-03T12:43:34.2283460Z   github-token: ***
+build	Setup Gradle	2026-07-03T12:43:34.2283741Z env:
+build	Setup Gradle	2026-07-03T12:43:34.2284103Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+build	Setup Gradle	2026-07-03T12:43:34.2284666Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+build	Setup Gradle	2026-07-03T12:43:34.2285297Z ##[endgroup]
+build	Setup Gradle	2026-07-03T12:43:34.4133314Z (node:2316) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Setup Gradle	2026-07-03T12:43:34.4135068Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Setup Gradle	2026-07-03T12:43:34.6588723Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+build	Setup Gradle	2026-07-03T12:43:34.6591626Z ##[group]Restore Gradle state from cache
+build	Setup Gradle	2026-07-03T12:43:34.7495685Z ##[warning]Failed to restore gradle-home-v1|Linux|build[7b44bd8f192c4f5be4f6fcea0bdcc0ac]-2754abd01375ae37b103c222ffb53d8acb24c948: Error: Cache service responded with 400
+build	Setup Gradle	2026-07-03T12:43:34.7556113Z Gradle User Home cache not found. Will initialize empty.
+build	Setup Gradle	2026-07-03T12:43:34.7557168Z ##[endgroup]
+build	Grant execute permission for gradlew	﻿2026-07-03T12:43:34.7688167Z ##[group]Run chmod +x gradlew
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7688620Z ^[[36;1mchmod +x gradlew^[[0m
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7889068Z shell: /usr/bin/bash -e {0}
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7889442Z env:
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7889828Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7890425Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7890938Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7891320Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7891907Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7892422Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7892998Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7893413Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+build	Grant execute permission for gradlew	2026-07-03T12:43:34.7893735Z ##[endgroup]
+build	Build Debug APK	﻿2026-07-03T12:43:34.8010821Z ##[group]Run ./gradlew assembleDebug
+build	Build Debug APK	2026-07-03T12:43:34.8011236Z ^[[36;1m./gradlew assembleDebug^[[0m
+build	Build Debug APK	2026-07-03T12:43:34.8041712Z shell: /usr/bin/bash -e {0}
+build	Build Debug APK	2026-07-03T12:43:34.8042059Z env:
+build	Build Debug APK	2026-07-03T12:43:34.8042433Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+build	Build Debug APK	2026-07-03T12:43:34.8043024Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+build	Build Debug APK	2026-07-03T12:43:34.8043497Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+build	Build Debug APK	2026-07-03T12:43:34.8043871Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+build	Build Debug APK	2026-07-03T12:43:34.8044219Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+build	Build Debug APK	2026-07-03T12:43:34.8044706Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+build	Build Debug APK	2026-07-03T12:43:34.8045261Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+build	Build Debug APK	2026-07-03T12:43:34.8045649Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+build	Build Debug APK	2026-07-03T12:43:34.8045966Z ##[endgroup]
+build	Build Debug APK	2026-07-03T12:43:35.0368942Z Downloading https://services.gradle.org/distributions/gradle-8.6-bin.zip
+build	Build Debug APK	2026-07-03T12:43:37.4197970Z ............10%.............20%............30%.............40%.............50%............60%.............70%.............80%............90%.............100%
+build	Build Debug APK	2026-07-03T12:43:38.6277388Z 
+build	Build Debug APK	2026-07-03T12:43:38.6278539Z Welcome to Gradle 8.6!
+build	Build Debug APK	2026-07-03T12:43:38.6279420Z 
+build	Build Debug APK	2026-07-03T12:43:38.6285061Z Here are the highlights of this release:
+build	Build Debug APK	2026-07-03T12:43:38.6286315Z  - Configurable encryption key for configuration cache
+build	Build Debug APK	2026-07-03T12:43:38.6287101Z  - Build init improvements
+build	Build Debug APK	2026-07-03T12:43:38.6287621Z  - Build authoring improvements
+build	Build Debug APK	2026-07-03T12:43:38.6287977Z 
+build	Build Debug APK	2026-07-03T12:43:38.6288220Z For more details see https://docs.gradle.org/8.6/release-notes.html
+build	Build Debug APK	2026-07-03T12:43:38.6288556Z 
+build	Build Debug APK	2026-07-03T12:43:38.8270050Z Starting a Gradle Daemon (subsequent builds will be faster)
+build	Build Debug APK	2026-07-03T12:44:33.1343059Z > Task :app:preBuild UP-TO-DATE
+build	Build Debug APK	2026-07-03T12:44:33.1383644Z > Task :app:preDebugBuild UP-TO-DATE
+build	Build Debug APK	2026-07-03T12:44:33.1392565Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+build	Build Debug APK	2026-07-03T12:44:33.1393534Z > Task :app:checkKotlinGradlePluginConfigurationErrors
+build	Build Debug APK	2026-07-03T12:44:36.6286500Z > Task :app:generateDebugResValues
+build	Build Debug APK	2026-07-03T12:44:36.6313551Z > Task :app:checkDebugAarMetadata
+build	Build Debug APK	2026-07-03T12:44:36.7267088Z > Task :app:mapDebugSourceSetPaths
+build	Build Debug APK	2026-07-03T12:44:36.7293422Z > Task :app:generateDebugResources
+build	Build Debug APK	2026-07-03T12:44:37.9275549Z > Task :app:packageDebugResources
+build	Build Debug APK	2026-07-03T12:44:39.1273084Z > Task :app:mergeDebugResources
+build	Build Debug APK	2026-07-03T12:44:39.2283781Z > Task :app:createDebugCompatibleScreenManifests
+build	Build Debug APK	2026-07-03T12:44:39.2308920Z > Task :app:extractDeepLinksDebug
+build	Build Debug APK	2026-07-03T12:44:39.3293192Z > Task :app:parseDebugLocalResources
+build	Build Debug APK	2026-07-03T12:44:39.5274461Z 
+build	Build Debug APK	2026-07-03T12:44:39.5275524Z > Task :app:processDebugMainManifest
+build	Build Debug APK	2026-07-03T12:44:39.5277175Z package="com.hermes.automationbridge" found in source AndroidManifest.xml: /home/runner/work/automation-bridge-app/automation-bridge-app/app/src/main/AndroidManifest.xml.
+build	Build Debug APK	2026-07-03T12:44:39.5279699Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+build	Build Debug APK	2026-07-03T12:44:39.5303180Z Recommendation: remove package="com.hermes.automationbridge" from the source AndroidManifest.xml: /home/runner/work/automation-bridge-app/automation-bridge-app/app/src/main/AndroidManifest.xml.
+build	Build Debug APK	2026-07-03T12:44:39.6266181Z 
+build	Build Debug APK	2026-07-03T12:44:39.6282332Z > Task :app:processDebugManifest
+build	Build Debug APK	2026-07-03T12:44:39.6312130Z > Task :app:javaPreCompileDebug
+build	Build Debug APK	2026-07-03T12:44:39.7267707Z > Task :app:mergeDebugShaders
+build	Build Debug APK	2026-07-03T12:44:39.7268657Z > Task :app:processDebugManifestForPackage
+build	Build Debug APK	2026-07-03T12:44:40.6302700Z > Task :app:compileDebugShaders NO-SOURCE
+build	Build Debug APK	2026-07-03T12:44:40.6362415Z > Task :app:generateDebugAssets UP-TO-DATE
+build	Build Debug APK	2026-07-03T12:44:40.8312349Z > Task :app:mergeDebugAssets
+build	Build Debug APK	2026-07-03T12:44:40.8372147Z > Task :app:compressDebugAssets
+build	Build Debug APK	2026-07-03T12:44:40.8402006Z > Task :app:desugarDebugFileDependencies
+build	Build Debug APK	2026-07-03T12:44:41.5272577Z > Task :app:processDebugResources FAILED
+build	Build Debug APK	2026-07-03T12:44:42.3310029Z 
+build	Build Debug APK	2026-07-03T12:44:42.3310516Z > Task :app:checkDebugDuplicateClasses
+build	Build Debug APK	2026-07-03T12:44:42.3330967Z FAILURE: Build failed with an exception.
+build	Build Debug APK	2026-07-03T12:44:42.3331752Z 19 actionable tasks: 19 executed
+build	Build Debug APK	2026-07-03T12:44:42.3338518Z 
+build	Build Debug APK	2026-07-03T12:44:42.3338947Z * What went wrong:
+build	Build Debug APK	2026-07-03T12:44:42.3339635Z Execution failed for task ':app:processDebugResources'.
+build	Build Debug APK	2026-07-03T12:44:42.3341021Z > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+build	Build Debug APK	2026-07-03T12:44:42.3342560Z    > Android resource linking failed
+build	Build Debug APK	2026-07-03T12:44:42.3344315Z      ERROR: /home/runner/work/automation-bridge-app/automation-bridge-app/app/src/main/AndroidManifest.xml:6:5-36:19: AAPT: error: resource mipmap/ic_launcher (aka com.hermes.automationbridge:mipmap/ic_launcher) not found.
+build	Build Debug APK	2026-07-03T12:44:42.3346168Z          
+build	Build Debug APK	2026-07-03T12:44:42.3348114Z      ERROR: /home/runner/work/automation-bridge-app/automation-bridge-app/app/src/main/AndroidManifest.xml:6:5-36:19: AAPT: error: resource mipmap/ic_launcher_round (aka com.hermes.automationbridge:mipmap/ic_launcher_round) not found.
+build	Build Debug APK	2026-07-03T12:44:42.3370189Z          
+build	Build Debug APK	2026-07-03T12:44:42.3370612Z 
+build	Build Debug APK	2026-07-03T12:44:42.3370938Z * Try:
+build	Build Debug APK	2026-07-03T12:44:42.3371836Z > Run with --stacktrace option to get the stack trace.
+build	Build Debug APK	2026-07-03T12:44:42.3372720Z > Run with --info or --debug option to get more log output.
+build	Build Debug APK	2026-07-03T12:44:42.3373652Z > Run with --scan to get full insights.
+build	Build Debug APK	2026-07-03T12:44:42.3374602Z > Get more help at https://help.gradle.org.
+build	Build Debug APK	2026-07-03T12:44:42.3375167Z 
+build	Build Debug APK	2026-07-03T12:44:42.3375500Z BUILD FAILED in 1m 7s
+build	Build Debug APK	2026-07-03T12:44:42.8158311Z ##[error]Process completed with exit code 1.
+build	Post Setup Gradle	﻿2026-07-03T12:44:42.8344098Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Post Setup Gradle	2026-07-03T12:44:42.8345332Z Post job cleanup.
+build	Post Setup Gradle	2026-07-03T12:44:43.0199774Z In post-action step
+build	Post Setup Gradle	2026-07-03T12:44:43.0208801Z Stopping all Gradle daemons before saving Gradle User Home state
+build	Post Setup Gradle	2026-07-03T12:44:43.0210593Z Stopping Gradle daemons for /home/runner/.gradle/wrapper/dists/gradle-8.6-bin/afr5mpiioh2wthjmwnkmdsd5w/gradle-8.6
+build	Post Setup Gradle	2026-07-03T12:44:43.0221267Z (node:2557) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Post Setup Gradle	2026-07-03T12:44:43.0222744Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Post Setup Gradle	2026-07-03T12:44:43.0228962Z [command]/home/runner/.gradle/wrapper/dists/gradle-8.6-bin/afr5mpiioh2wthjmwnkmdsd5w/gradle-8.6/bin/gradle --stop
+build	Post Setup Gradle	2026-07-03T12:44:44.0336214Z Stopping Daemon(s)
+build	Post Setup Gradle	2026-07-03T12:44:44.0344542Z 1 Daemon stopped
+build	Post Setup Gradle	2026-07-03T12:44:44.0464672Z ##[group]Caching Gradle state
+build	Post Setup Gradle	2026-07-03T12:44:44.0713226Z Caching generated-gradle-jars with path '/home/runner/.gradle/caches/8.6/generated-gradle-jars/gradle-api-8.6.jar' and cache key: gradle-generated-gradle-jars-v1-724640d9b6d38238f67abd00073cebeb
+build	Post Setup Gradle	2026-07-03T12:44:44.0749163Z Caching wrapper-zips with path '/home/runner/.gradle/wrapper/dists/gradle-8.6-bin/afr5mpiioh2wthjmwnkmdsd5w' and cache key: gradle-wrapper-zips-v1-61c267d33d913e95c956e860b86f9705
+build	Post Setup Gradle	2026-07-03T12:44:44.0932466Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/automation-bridge-app/automation-bridge-app --files-from manifest.txt --use-compress-program zstdmt
+build	Post Setup Gradle	2026-07-03T12:44:44.0972384Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/automation-bridge-app/automation-bridge-app --files-from manifest.txt --use-compress-program zstdmt
+build	Post Setup Gradle	2026-07-03T12:44:44.5392913Z Caching dependencies with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and cache key: gradle-dependencies-v1-45fcef2049c51554096df1e838fb797f
+build	Post Setup Gradle	2026-07-03T12:44:44.5843350Z Caching instrumented-jars with path '/home/runner/.gradle/caches/jars-*/*/' and cache key: gradle-instrumented-jars-v1-d86c24daf382ae2bde833b6ed2a4f4e1
+build	Post Setup Gradle	2026-07-03T12:44:44.6249609Z Caching kotlin-dsl with path '/home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/
+build	Post Setup Gradle	2026-07-03T12:44:44.6251109Z /home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/' and cache key: gradle-kotlin-dsl-v1-d72a5c40fd2f682fb04a8751a0c401e8
+build	Post Setup Gradle	2026-07-03T12:44:44.6831920Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/automation-bridge-app/automation-bridge-app --files-from manifest.txt --use-compress-program zstdmt
+build	Post Setup Gradle	2026-07-03T12:44:44.7677757Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/automation-bridge-app/automation-bridge-app --files-from manifest.txt --use-compress-program zstdmt
+build	Post Setup Gradle	2026-07-03T12:44:44.8510370Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/jars-*/*/' and key: gradle-instrumented-jars-v1-d86c24daf382ae2bde833b6ed2a4f4e1: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0vK5HagAAAAAimhXz/Nz/SbRJHhTtY/gsU1RCRURHRTA1MDkARWRnZQ==
+build	Post Setup Gradle	2026-07-03T12:44:44.8677215Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/8.6/generated-gradle-jars/gradle-api-8.6.jar' and key: gradle-generated-gradle-jars-v1-724640d9b6d38238f67abd00073cebeb: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0vK5HagAAAAA/kg0iif5FSqggx07R61D1U1RCRURHRTA1MjEARWRnZQ==
+build	Post Setup Gradle	2026-07-03T12:44:44.9274575Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/
+build	Post Setup Gradle	/home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/' and key: gradle-kotlin-dsl-v1-d72a5c40fd2f682fb04a8751a0c401e8: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0vK5HagAAAABHC4ZxfMCBQKDO+SwIhF4ZU1RCRURHRTAzMTAARWRnZQ==
+build	Post Setup Gradle	2026-07-03T12:44:44.9650357Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/wrapper/dists/gradle-8.6-bin/afr5mpiioh2wthjmwnkmdsd5w' and key: gradle-wrapper-zips-v1-61c267d33d913e95c956e860b86f9705: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0vK5HagAAAABb3t+RYIjgR5iEJ8SWP8KTU1RCRURHRTA1MTMARWRnZQ==
+build	Post Setup Gradle	2026-07-03T12:44:45.1235914Z Caching transforms with path '/home/runner/.gradle/caches/transforms-4/*/
+build	Post Setup Gradle	2026-07-03T12:44:45.1237151Z /home/runner/.gradle/caches/*/transforms/*/' and cache key: gradle-transforms-v1-31093abb5717adb6fd895316a54a82b1
+build	Post Setup Gradle	2026-07-03T12:44:45.2950863Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/automation-bridge-app/automation-bridge-app --files-from manifest.txt --use-compress-program zstdmt
+build	Post Setup Gradle	2026-07-03T12:44:45.3627571Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/automation-bridge-app/automation-bridge-app --files-from manifest.txt --use-compress-program zstdmt
+build	Post Setup Gradle	2026-07-03T12:44:46.1537417Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and key: gradle-dependencies-v1-45fcef2049c51554096df1e838fb797f: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0vq5HagAAAADd4X1rxUFuS5A7bS4SEbKeQ08xRURHRTI5MTkARWRnZQ==
+build	Post Setup Gradle	2026-07-03T12:44:46.7537396Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/transforms-4/*/
+build	Post Setup Gradle	/home/runner/.gradle/caches/*/transforms/*/' and key: gradle-transforms-v1-31093abb5717adb6fd895316a54a82b1: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0vq5HagAAAAAWSuZ43nVvQLcmGtd4hyiUQ08xRURHRTI0MDcARWRnZQ==
+build	Post Setup Gradle	2026-07-03T12:44:46.9792014Z Caching Gradle User Home with cache key: gradle-home-v1|Linux|build[7b44bd8f192c4f5be4f6fcea0bdcc0ac]-2754abd01375ae37b103c222ffb53d8acb24c948
+build	Post Setup Gradle	2026-07-03T12:44:46.9889814Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/automation-bridge-app/automation-bridge-app --files-from manifest.txt --use-compress-program zstdmt
+build	Post Setup Gradle	2026-07-03T12:44:47.0898403Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle' and key: gradle-home-v1|Linux|build[7b44bd8f192c4f5be4f6fcea0bdcc0ac]-2754abd01375ae37b103c222ffb53d8acb24c948: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0v65HagAAAACOaXqr7FdyRYgUHp3kCbEWQ08xRURHRTE0MTEARWRnZQ==
+build	Post Setup Gradle	2026-07-03T12:44:47.0902390Z ##[endgroup]
+build	Post Setup Gradle	2026-07-03T12:44:47.0904028Z Generating Job Summary
+build	Post Setup Gradle	2026-07-03T12:44:47.0918110Z Completed post-action step
+build	Post Set up JDK 17	﻿2026-07-03T12:44:47.1095265Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Post Set up JDK 17	2026-07-03T12:44:47.1096536Z Post job cleanup.
+build	Post Set up JDK 17	2026-07-03T12:44:47.2386991Z (node:2667) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Post Set up JDK 17	2026-07-03T12:44:47.2387934Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Post Run actions/checkout@v4	﻿2026-07-03T12:44:47.2589037Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.2590281Z Post job cleanup.
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3450391Z [command]/usr/bin/git version
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3496351Z git version 2.54.0
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3541311Z Temporarily overriding HOME='/home/runner/work/_temp/d5c8d242-1441-4f31-868f-9bb68e406f13' before making global git config changes
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3542763Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3547993Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/automation-bridge-app/automation-bridge-app
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3587729Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3623711Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3879013Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3908556Z http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3919666Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.3954040Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.4225779Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Run actions/checkout@v4	2026-07-03T12:44:47.4294995Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2026-07-03T12:44:47.4690080Z Cleaning up orphan processes
+build	Complete job	2026-07-03T12:44:47.4977118Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, gradle/actions/setup-gradle@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

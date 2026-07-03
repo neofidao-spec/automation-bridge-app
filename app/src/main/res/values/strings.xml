@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Automation Bridge</string>
+    <string name="accessibility_service_label">Hermes Bridge Service</string>
+    <string name="accessibility_service_description">This service allows Hermes Agent to perform UI automation.</string>
+</resources>

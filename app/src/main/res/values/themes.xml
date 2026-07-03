@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.AutomationBridge" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+</resources>
